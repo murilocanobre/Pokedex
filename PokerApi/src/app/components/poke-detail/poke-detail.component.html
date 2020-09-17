@@ -1,1 +1,31 @@
-<p>poke-detail works!</p>
+<mat-card class="card">
+
+
+
+  <mat-card-header>
+    <img mat-card-avatar class="header-image" src="{{pokemonImg}}">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+
+
+
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip color="primary" *ngFor="let item of pokemon.types">Tipo: {{item.type.name}}</mat-chip>
+      <mat-chip color="primary">Altura: {{pokemon.height}}</mat-chip>
+      <mat-chip color="primary">HP: {{hp}}</mat-chip>
+      <mat-chip color="primary">Ataque: {{attack}}</mat-chip>
+      <mat-chip color="primary">Defesa: {{defense}}</mat-chip>
+      <mat-chip color="primary">Velocidade: {{speed}}</mat-chip>
+
+      <mat-chip color="primary" *ngIf="pokemonEvolute">1ª Evolução: {{pokemonEvolute}}</mat-chip>
+      <mat-chip color="primary" *ngIf="pokemonEvolute1">2ª Evolução: {{pokemonEvolute1}}</mat-chip>
+
+    </mat-chip-list>
+
+  </mat-card-content>
+
+</mat-card>
