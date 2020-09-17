@@ -60,6 +60,9 @@ export class PokeDetailComponent implements OnInit {
               this.pokemonEvolute = res.chain.evolves_to[0].species.name;
               this.pokemonEvolute1 = res.chain.evolves_to[0].evolves_to[0].species.name;
             }
+            if(this.name === res.chain.evolves_to[0].species.name) {
+              this.pokemonEvolute = res.chain.evolves_to[0].evolves_to[0].species.name;
+            }
 
 
 

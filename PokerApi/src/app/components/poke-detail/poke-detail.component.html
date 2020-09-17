@@ -21,11 +21,13 @@
       <mat-chip color="primary">Defesa: {{defense}}</mat-chip>
       <mat-chip color="primary">Velocidade: {{speed}}</mat-chip>
 
-      <mat-chip color="primary" *ngIf="pokemonEvolute">1ª Evolução: {{pokemonEvolute}}</mat-chip>
-      <mat-chip color="primary" *ngIf="pokemonEvolute1">2ª Evolução: {{pokemonEvolute1}}</mat-chip>
+
 
     </mat-chip-list>
-
+    <mat-chip-list>
+      <mat-chip color="primary" *ngIf="pokemonEvolute">Evolução: {{pokemonEvolute}}</mat-chip>
+      <mat-chip color="primary" *ngIf="pokemonEvolute1">2ª Evolução: {{pokemonEvolute1}}</mat-chip>
+    </mat-chip-list>
   </mat-card-content>
 
 </mat-card>
