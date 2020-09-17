@@ -3,7 +3,9 @@ Projeto Pokedex
 Nesse Projeto foi utilizado Angular na versão  10.1.1.
 
 Para instalação dos pacotes executar 
+
 npm install
+
 npm install -g @angular/cli
 
 Para iniciar o servidor 
