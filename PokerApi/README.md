@@ -1,27 +1,27 @@
-# PokerApi
+Projeto Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+Nesse Projeto foi utilizado Angular na versão  10.1.1.
 
-## Development server
+Para instalação dos pacotes executar 
+npm install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para iniciar o servidor 
+ng serve
 
-## Code scaffolding
+Está executando em http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O Projeto contém uma lista de pokémons, onde por padrão é exibido 10 por páginas, porém pode ser alterado para 20 ou 50 por páginas. 
 
-## Build
+Contém filtro de pesquisa por nome ou Id
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ao clicar em um pokemon é exibido os atributos abaixo
+    - Nome
+    - Imagem
+    - Altura
+    - Lista de Tipos
+    - Velocidade
+    - Defesa
+    - Ataque
+    - HP 
+    - Passos da Evolução , sendo esse só exibido para o primeiro da evolução 
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
