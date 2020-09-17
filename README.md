@@ -36,5 +36,5 @@ Ao clicar em um pokemon é exibido os atributos abaixo
 
     - HP 
 
-    - Passos da Evolução , sendo esse só exibido para o primeiro da evolução 
+    - Passos da Evolução 
 
